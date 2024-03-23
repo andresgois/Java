@@ -1,4 +1,4 @@
-# Alaga
+# Alga
 
 - Rodar projeto via terminal
 ```java -jar target/algafood_api_base-0.0.1-SNAPSHOT.jar```
@@ -24,3 +24,36 @@
 - é útil para a construção de APIs RESTful, enquanto @Controller é mais comumente usado para controladores que renderizam visões para páginas da web.
 
 > Em resumo, se você está criando um controlador que irá retornar dados para uma aplicação cliente (como uma API REST), você geralmente usará @RestController. Se você está criando um controlador que renderizará uma visão para uma página da web, você usará @Controller.
+
+
+## Spring IOC Container
+- *Spring Context*: Responsável pela Injecção de dependências.
+- *Bean*: Objetos gerenciados pelo container do spring.
+
+### Formas de declarar um Bean, compoenente Spring
+> @Component: na classe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
