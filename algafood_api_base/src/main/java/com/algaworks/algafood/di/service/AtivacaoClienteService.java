@@ -11,8 +11,11 @@ import com.algaworks.algafood.notificacao.Notificador;
 @Component
 public class AtivacaoClienteService {
 	//pontos de contrução
-	@Autowired (required = false)//instânciação opcional//1
-	private List<Notificador> notificadores;
+	//Ambiguidade de beans e injeção de lista de beans
+	//@Autowired (required = false)//instânciação opcional//1
+	//private List<Notificador> notificadores;
+	@Autowired
+	private Notificador notificador;
 	
 	/*@Autowired
 	public AtivacaoClienteService(Notificador notificador) {
@@ -28,9 +31,10 @@ public class AtivacaoClienteService {
 		}else {
 			System.out.println("Está nulo!");
 		}*/
-		for (Notificador notificador: notificadores) {
+		/*for (Notificador notificador: notificadores) {
 			notificador.notificar(c, "Seu cadastro está ativo!");
-		}
+		}*/
+		notificador.notificar(c, "Seu cadastro está ativo!");
 	}
 
 	/*public Notificador getNotificador() {
